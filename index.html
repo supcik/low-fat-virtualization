@@ -89,7 +89,8 @@
 				<section>
           <h2 style="font-family: 'Cutive Mono'; font-weight: bold; font-size: 100pt;">chroot</h2>
           <ul>
-            <li class="fragment">The chroot system call was introduced during development of Version 7 Unix in 1979 is was available since 1982<br>(32 years old).</li>
+            <li class="fragment">The chroot system call was introduced during development of Version 7 Unix in
+              1979 is was available since 1982<br>(32 years old).</li>
             <li class="fragment">Provides (partial) file system isolation only.</li>
             <li class="fragment">&ldquo;root&rdquo; users can still escape chroot.</li> 
             <li class="fragment">requires some manual linking (or copying) of system files.</li>
@@ -105,7 +106,8 @@
           <h2 class="skip">BSD's &ldquo;Jail&rdquo;</h2>
 					<ul>
             <li class="fragment">Available since 1998 (16 years old).</li>
-            <li class="fragment">Provides disk and CPU quotas, memory limits, network and root privilege isolation.</li>
+            <li class="fragment">Provides disk and CPU quotas, memory limits, network and root privilege
+              isolation.</li>
 					</ul>
           <img width="550" class="fragment plain" src="images/bsd_jail.png" alt="BSD Jail">
 				</section>
@@ -128,9 +130,11 @@
           <h2>OpenVZ</h2>
           <h3>Source: OpenVZ Web site</h2>
           <ul>
-            <li class="fragment">Container looks like a normal Linux system. It has standard startup scripts, software from vendors can run inside Container without OpenVZ-specific modifications or adjustment.</li>
+            <li class="fragment">Container looks like a normal Linux system. It has standard startup scripts,
+              software from vendors can run inside Container without OpenVZ-specific modifications or adjustment.</li>
             <li class="fragment">A user can change any configuration file and install additional software.</li>
-            <li class="fragment">Containers are fully isolated from each other (file system, processes, Inter Process Communication (IPC), sysctl variables).</li>
+            <li class="fragment">Containers are fully isolated from each other (file system, processes, Inter Process
+             Communication (IPC), sysctl variables).</li>
           </ul>
 				</section>
 
@@ -139,7 +143,8 @@
           <h3>Source: OpenVZ Web site</h2>
           <ul>
             <li class="fragment">Containers share dynamic libraries, which greatly saves memory.</li>
-            <li class="fragment">Processes belonging to a Container are scheduled for execution on all available CPUs. Consequently, Containers are not bound to only one CPU and can use all available CPU power.</li>
+            <li class="fragment">Processes belonging to a Container are scheduled for execution on all available
+              CPUs. Consequently, Containers are not bound to only one CPU and can use all available CPU power.</li>
           </ul>
 				</section>
 
@@ -152,8 +157,11 @@
           <h2 class="skip">LXC Linux Container</h2>
           <ul>
             <li class="fragment">Available since 2008 (6 years old).</li>
-            <li class="fragment">Relies on the Linux kernel &ldquo;cgroups&rdquo; functionality that was released in version 2.6.24.</li>
-            <li class="fragment">Partial file system isolation, no root privilege isolation, no partition checkpointing and no live migration!</li>
+            <li class="fragment">Relies on the Linux kernel &ldquo;cgroups&rdquo; functionality that
+              was released in version 2.6.24.</li>
+            <li class="fragment">Full file system isolation and root privilege isolation since version 1.0
+             (February 2014 / Linux kernel 3.8)</li>
+            <li class="fragment">No partition checkpointing and no live migration!</li>
             <li class="fragment">&ldquo;chroot on steroids&rdquo;.</li>
           </ul>
 				</section>
@@ -179,8 +187,11 @@
           <ul>
             <li class="fragment">Available since 2013 (1 year <strike>old</strike> young).</li>
             <li class="fragment">Based on LXC.</li>
-            <li class="fragment">Is currently under heavy development. Docker should not be used in production (yet).</li>
-            <li class="fragment">&ldquo;Docker is an open-source engine that automates the deployment of any application as a lightweight, portable, self-sufficient container that will run virtually anywhere.&rdquo;</li>
+            <li class="fragment">Is currently under heavy development. Docker should not be used in production
+              (yet).</li>
+            <li class="fragment">&ldquo;Docker is an open-source engine that automates the deployment of any
+             application as a lightweight, portable, self-sufficient container that will run virtually
+             anywhere.&rdquo;</li>
           </ul>
 				</section>
 
@@ -190,7 +201,8 @@
             <img width="400" class="plain" src="images/digital-ocean.png" alt="Digital Ocean">
           </div>
           <div>
-            If you want to try &ldquo;Docker&rdquo; you can easilly do it on a &ldquo;Droplet&rdquo; at Digital Ocean. (5$ for 1 month)
+            If you want to try &ldquo;Docker&rdquo; you can easilly do it on a &ldquo;Droplet&rdquo; at Digital
+            Ocean. (5$ for 1 month)
           </div>
 				</section>
 
